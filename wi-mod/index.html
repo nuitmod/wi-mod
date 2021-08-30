@@ -20,6 +20,8 @@
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
+    <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <style amp-custom>
     /* Add your styles here */
   :root{
@@ -38,6 +40,7 @@
   amp-accordion {
     background: var(--bg-menu);
     width: 99%;
+    margin-bottom: 5px;
   }
   amp-accordion a{
     background: var(--bg-menu);
@@ -52,7 +55,6 @@
   }
   .inner{
     width: 50%;
-    margin-bottom: 5px;
   }
   amp-youtube{
     margin: 5px 9px;
@@ -68,7 +70,14 @@
  amp-img{
      margin: 5px 1px 0 0;
  }
-
+ .inst{
+   width: 50%;
+   height: 50%;
+ }
+amp-iframe{
+  position: absolute;
+  margin-top: 500px;
+}
 </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <link rel="canonical" href="https://wi-mod.vercel.app">
@@ -139,12 +148,35 @@
           </div>
         </section>
       </amp-accordion>     
+      <amp-accordion class="inner" disable-session-states>
+        <section>
+          <h6 class="amp_a">_</h6>
+          <div>
+            <div class="inst">
+              <amp-instagram
+                data-shortcode="CISQco7B5Ft"
+                data-captioned
+                width="100"
+                height="100"
+                layout="responsive"
+              >
+              </amp-instagram>
+            </div>
+          </div>
+        </section>
+      </amp-accordion>     
     </div>
   </section>
 </amp-accordion>
-<br>
-
-
+<!-- <amp-accordion class="main" disable-session-states>
+  <section>
+    <h6 class="amp_a">_</h6>
+    <div>
+<amp-iframe src="https://vii-mod.vercel.app/#ifr" width="500" height="1599" scrolling="no" frameborder=0 sandbox="allow-scripts allow-same-origin"></amp-iframe>
+</div>
+</section>
+</amp-accordion> -->
+<amp-iframe src="https://vii-mod.vercel.app/#ifr" width="500" height="1599" scrolling="no" frameborder="0" sandbox="allow-scripts allow-same-origin"></amp-iframe>
 <!-- <amp-install-serviceworker src="../sw.js"
                            data-iframe-src="install-sw.html"
                            layout="nodisplay">
