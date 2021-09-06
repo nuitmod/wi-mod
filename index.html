@@ -23,9 +23,8 @@
     <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <style amp-custom>
-    /* Add your styles here */
   :root{
-    --bg-main: #df6b91;
+    --bg-main: #9f9f9f;
     --bg-menu: black;
   }
   *{
@@ -35,6 +34,7 @@
   body{
     -webkit-text-size-adjust: 100%;
     background: var(--bg-menu);
+    color: var(--bg-main);
     font-size: 11px;
   }
   amp-accordion {
@@ -66,21 +66,22 @@
     background: black;
     background-color: black;
     z-index: 12;
- }
- amp-img{
-     margin: 5px 1px 0 0;
- }
- .inst{
-   width: 50%;
-   height: 50%;
- }
-amp-iframe{
-  position: absolute;
-  margin-top: 500px;
-}
-#ifr_cont{
-  width: 75%;
-}
+  }
+  amp-img{
+    margin: 5px 1px 0 0;
+    opacity: 0.7;
+  }
+  .inst{
+    width: 50%;
+    height: 50%;
+  }
+  amp-iframe{
+    position: absolute;
+    margin-top: 500px;
+  }
+  #ifr_cont{
+    width: 75%;
+  }
 </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <link rel="canonical" href="https://wi-mod.vercel.app">
@@ -131,14 +132,14 @@ amp-iframe{
       </div>
   </section>
 </amp-accordion>
-<amp-img height="59" width="52" src="./wi-mod/img/vy_1.JPG" style="opacity:0.8"></amp-img>
+<amp-img height="59" width="52" src="./wi-mod/img/vy_1.JPG"></amp-img>
+<!-- <amp-img height="59" width="99" src="./wi-mod/img/IMG_1731.PNG" style="opacity:0.8"></amp-img> -->
 <br>
 <amp-accordion class="main" disable-session-states>
   <section>
     <h6 class="amp_a">_</h6>
     <div id="wr1">
       <br>
-      <!-- <amp-img height="59" width="99" src="./img/IMG_1731.PNG" style="opacity:0.8"></amp-img> -->
       <amp-accordion class="inner" disable-session-states>
         <section>
           <h6 class="amp_a">radio</h6>
@@ -155,10 +156,9 @@ amp-iframe{
         <section>
           <h6 class="amp_a">_</h6>
           <div>
-            <amp-list width="auto"
-              height="50"
-              layout="fixed-height"
-              src="https://wi-mod.vercel.app/api">
+            <amp-list width="auto" height="50" layout="fixed-height"
+              src="https://wi-mod.vercel.app/api"
+              >
               <template type="amp-mustache">
                 <div>
                   name: {{name}}
@@ -172,14 +172,49 @@ amp-iframe{
     </div>
   </section>
 </amp-accordion>
-<!-- <amp-accordion class="main" disable-session-states>
+<amp-state id="wi_1">
+  <script type="application/json">
+    {
+      "items":[
+        { 
+          "id": 1,
+          "brand_name": "w1",
+          "img_url": "./wi-mod/img/IMG_1733.PNG",
+          "vid_id": ""
+        },
+        {
+          "id": 0,
+          "brand_name": "w0",
+          "img_url": "./wi-mod/img/IMG_1732.PNG",
+          "vid_id": ""
+        }
+      ]
+    }  
+  </script>
+</amp-state>   
+<amp-accordion class="main" disable-session-states>
   <section>
     <h6 class="amp_a">_</h6>
     <div>
-<amp-iframe src="https://vii-mod.vercel.app/#ifr" width="500" height="1599" scrolling="no" frameborder=0 sandbox="allow-scripts allow-same-origin"></amp-iframe>
-</div>
-</section>
-</amp-accordion> -->
+      <amp-list width="auto"
+        height="500"
+        layout="fixed-height"
+        src="amp-state:wi_1">
+        <template type="amp-mustache">
+          <div>
+            Brand: {{brand_name}}
+            <!-- <amp-img class="li-img" height="59" width="99" src="{{img_url}}" style="opacity:0.6"></amp-img> -->
+            id: {{id}}
+          </div>
+      </template>
+      </amp-list>
+    </div>
+  </section>
+</amp-accordion>
+<!-- <video data-html5-video="" poster="//zkres.myzaker.com/b64/202109/aHR0cDovL3prcmVzLm15emFrZXIuY29tL2ltZ191cGxvYWQvbGl2ZS91ZWRpdG9yL3VwbG9hZF9pbWcvMjAyMS8yMS8wOC8xOS8xNjI5MzY2MjkzNDQ3NTg0LmpwZ3wzMTRhOWMzMGM1OTFiNmM2OTNlNjA5MmZhNzMxMWM4Yg==_640.jpg" preload="metadata" src="blob:https://wap-live.myzaker.com/8dbf8fa4-e73b-407b-9b5b-3c039e9cd63a">
+</video> -->
+<!-- <video controlslist="nodownload noremote footbar" preload="none" x-webkit-airplay="deny" autoplay="true" playsinline="true" webkit-playsinline="true" raw-controls="true" x5-video-player-type="h5-page" poster="" style="width: 100%; height: 100%;" src="blob:https://vku.youku.com/c54710cc-8380-476a-a8e8-b86268e2ba59"></video> -->
+<!-- <video id="player-el_html5_api" preload="auto" playsinline="playsinline" webkit-playsinline="" class="vjs-tech" style="height: 340px;" tabindex="-1" role="application" autoplay="" src="blob:https://wx.vzan.com/a9121563-6766-438d-bdc9-b8cc22da24ba"><p class="vjs-no-js">不支持播放</p></video> -->
 <div id="ifr_cont">
   <amp-iframe src="https://vii-mod.vercel.app/#ifr" width="590" height="1599" scrolling="no" frameborder="0" sandbox="allow-scripts allow-same-origin"></amp-iframe>
 </div>
