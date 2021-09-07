@@ -24,8 +24,9 @@
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <style amp-custom>
   :root{
-    --bg-main: #9f9f9f;
+    --bg-main: #684f67;
     --bg-menu: black;
+    --bg-hov: ghostwhite;
   }
   *{
     margin: 0;
@@ -48,6 +49,9 @@
     font-size: 12px;
     text-decoration: none;
     padding: 5px 10px;
+  }
+  amp-accordion a:hover{
+    color: var(--bg-hov);
   }
   amp-accordion .amp_a{
     background: var(--bg-menu);
@@ -81,6 +85,9 @@
   }
   #ifr_cont{
     width: 75%;
+  }
+  h6:hover{
+    color: var(--bg-hov);
   }
 </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -152,7 +159,7 @@
           </div>
         </section>
       </amp-accordion>     
-      <amp-accordion class="inner" disable-session-states>
+      <!-- <amp-accordion class="inner" disable-session-states>
         <section>
           <h6 class="amp_a">_</h6>
           <div>
@@ -168,7 +175,7 @@
             </amp-list>
           </div>
         </section>
-      </amp-accordion>     
+      </amp-accordion>      -->
     </div>
   </section>
 </amp-accordion>
