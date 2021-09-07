@@ -86,7 +86,7 @@
   #ifr_cont{
     width: 75%;
   }
-  h6:hover{
+  h6:hover, amp-list p:hover{
     color: var(--bg-hov);
   }
 </style>
@@ -206,12 +206,15 @@
       <amp-list width="auto"
         height="500"
         layout="fixed-height"
+        
         src="amp-state:wi_1">
         <template type="amp-mustache">
           <div>
-            Brand: {{brand_name}}
-            <!-- <amp-img class="li-img" height="59" width="99" src="{{img_url}}" style="opacity:0.6"></amp-img> -->
-            id: {{id}}
+            <p>
+              Brand: {{brand_name}}
+              <!-- <amp-img class="li-img" height="59" width="99" src="{{img_url}}" style="opacity:0.6"></amp-img> -->
+              id: {{id}}
+            </p>
           </div>
       </template>
       </amp-list>
