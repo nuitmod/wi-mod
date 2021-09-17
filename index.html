@@ -80,11 +80,11 @@
     height: 50%;
   }
   amp-iframe{
-    position: absolute;
-    margin-top: 500px;
+    margin: 5px;
+    display: block;
   }
   #ifr_cont{
-    width: 75%;
+    width: 80%;
   }
   h6:hover, amp-list p:hover{
     color: var(--bg-hov);
@@ -139,7 +139,7 @@
       </div>
   </section>
 </amp-accordion>
-<amp-img height="59" width="52" src="./wi-mod/img/vy_1.JPG"></amp-img>
+<amp-img height="59" width="52" src="./wi-mod/img/vy_1.JPG" style="opacity:0.6"></amp-img>
 <!-- <amp-img height="59" width="99" src="./wi-mod/img/IMG_1731.PNG" style="opacity:0.8"></amp-img> -->
 <br>
 <amp-accordion class="main" disable-session-states>
@@ -204,7 +204,7 @@
     <h6 class="amp_a">_</h6>
     <div>
       <amp-list width="auto"
-        height="500"
+        height="100"
         layout="fixed-height"
         
         src="amp-state:wi_1">
@@ -215,9 +215,25 @@
               <!-- <amp-img class="li-img" height="59" width="99" src="{{img_url}}" style="opacity:0.6"></amp-img> -->
               id: {{id}}
             </p>
+            <div>
+
+            </div>
           </div>
       </template>
       </amp-list>
+      <!-- <amp-iframe width="360" height="209" src="https://www.youtube.com/embed/videoseries?list=PLliyT6QVi0cW3QHwFd4KgsMsDg3U9FoYn" sandbox="allow-scripts allow-same-origin allow-presentation" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        <amp-img placeholder height="59" width="99" src="./wi-mod/img/IMG_1731.PNG" style="opacity:0.8"></amp-img>
+      </amp-iframe> -->
+      <div>
+        <amp-iframe width="360" height="200" src="https://www.youtube.com/embed/videoseries?list=PLliyT6QVi0cUFxQU_bsMcGenXH9UsMLZH" sandbox="allow-scripts allow-same-origin allow-presentation" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          <amp-img placeholder height="59" width="99" src="./wi-mod/img/IMG_1731.PNG" style="opacity:0.8"></amp-img>
+        </amp-iframe>
+      </div>
+        <div>
+        <amp-iframe width="360" height="200" src="https://www.youtube.com/embed/videoseries?list=PLliyT6QVi0cUhfSYJHQ9QKupJOpaJ1ER5" sandbox="allow-scripts allow-same-origin allow-presentation" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          <amp-img placeholder height="59" width="99" src="./wi-mod/img/IMG_1731.PNG" style="opacity:0.8"></amp-img>
+        </amp-iframe>
+      </div>
     </div>
   </section>
 </amp-accordion>
@@ -226,7 +242,9 @@
 <!-- <video controlslist="nodownload noremote footbar" preload="none" x-webkit-airplay="deny" autoplay="true" playsinline="true" webkit-playsinline="true" raw-controls="true" x5-video-player-type="h5-page" poster="" style="width: 100%; height: 100%;" src="blob:https://vku.youku.com/c54710cc-8380-476a-a8e8-b86268e2ba59"></video> -->
 <!-- <video id="player-el_html5_api" preload="auto" playsinline="playsinline" webkit-playsinline="" class="vjs-tech" style="height: 340px;" tabindex="-1" role="application" autoplay="" src="blob:https://wx.vzan.com/a9121563-6766-438d-bdc9-b8cc22da24ba"><p class="vjs-no-js">不支持播放</p></video> -->
 <div id="ifr_cont">
-  <amp-iframe src="https://vii-mod.vercel.app/#ifr" width="590" height="1599" scrolling="no" frameborder="0" sandbox="allow-scripts allow-same-origin"></amp-iframe>
+  <amp-iframe src="https://vii-mod.vercel.app/#ifr" width="610" height="599" scrolling="no" frameborder="0" sandbox="allow-scripts allow-same-origin">
+    <amp-img placeholder height="59" width="99" src="./wi-mod/img/IMG_1731.PNG" style="opacity:0.8"></amp-img>
+  </amp-iframe>
 </div>
 <!-- <amp-install-serviceworker src="../sw.js"
                            data-iframe-src="install-sw.html"
