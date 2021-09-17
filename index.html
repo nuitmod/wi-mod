@@ -79,8 +79,8 @@
     width: 50%;
     height: 50%;
   }
-  amp-iframe{
-    margin: 5px;
+  .inner amp-iframe{
+    margin: 12px;
     display: block;
   }
   #ifr_cont{
@@ -139,7 +139,8 @@
       </div>
   </section>
 </amp-accordion>
-<amp-img height="59" width="52" src="./wi-mod/img/vy_1.JPG" style="opacity:0.6"></amp-img>
+<!-- <amp-img height="59" width="52" src="./wi-mod/img/vy_1.JPG" style="opacity:0.29"></amp-img> -->
+<amp-img height="59" width="52" src="./wi-mod/img/IMG_2202.JPG" style="opacity:0.29"></amp-img>
 <!-- <amp-img height="59" width="99" src="./wi-mod/img/IMG_1731.PNG" style="opacity:0.8"></amp-img> -->
 <br>
 <amp-accordion class="main" disable-session-states>
@@ -185,15 +186,13 @@
       "items":[
         { 
           "id": 1,
-          "brand_name": "w1",
-          "img_url": "./wi-mod/img/IMG_1733.PNG",
-          "vid_id": ""
+          "name": "w1",
+          "vid_id": "https://www.youtube.com/embed/videoseries?list=PLliyT6QVi0cUhfSYJHQ9QKupJOpaJ1ER5"
         },
         {
           "id": 0,
-          "brand_name": "w0",
-          "img_url": "./wi-mod/img/IMG_1732.PNG",
-          "vid_id": ""
+          "name": "w0",
+          "vid_id": "https://www.youtube.com/embed/videoseries?list=PLliyT6QVi0cUFxQU_bsMcGenXH9UsMLZH"
         }
       ]
     }  
@@ -203,28 +202,37 @@
   <section>
     <h6 class="amp_a">_</h6>
     <div>
-      <amp-list width="auto"
-        height="100"
-        layout="fixed-height"
-        
-        src="amp-state:wi_1">
-        <template type="amp-mustache">
+      <br>
+      <amp-accordion class="inner" disable-session-states>
+        <section>
+          <h6 class="amp_a">playlists</h6>
           <div>
-            <p>
-              Brand: {{brand_name}}
-              <!-- <amp-img class="li-img" height="59" width="99" src="{{img_url}}" style="opacity:0.6"></amp-img> -->
-              id: {{id}}
-            </p>
-            <div>
-
-            </div>
+            <amp-list width="auto"
+              height="550"
+              layout="fixed-height"     
+              src="amp-state:wi_1">
+              <template type="amp-mustache">
+                <div>
+                  <!-- <p>
+                    Brand: {{brand_name}}
+                    <amp-img class="li-img" height="59" width="99" src="{{img_url}}" style="opacity:0.6"></amp-img>
+                    id: {{id}}
+                  </p> -->
+                  <div>
+                    <amp-iframe width="350" height="180" src={{vid_id}} sandbox="allow-scripts allow-same-origin allow-presentation" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                      <amp-img placeholder height="9" width="17" src="./wi-mod/img/IMG_1733.PNG" style="opacity:0.1"></amp-img>
+                    </amp-iframe>
+                  </div>
+                </div>
+            </template>
+            </amp-list>
           </div>
-      </template>
-      </amp-list>
+        </section>
+      </amp-accordion>     
       <!-- <amp-iframe width="360" height="209" src="https://www.youtube.com/embed/videoseries?list=PLliyT6QVi0cW3QHwFd4KgsMsDg3U9FoYn" sandbox="allow-scripts allow-same-origin allow-presentation" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         <amp-img placeholder height="59" width="99" src="./wi-mod/img/IMG_1731.PNG" style="opacity:0.8"></amp-img>
       </amp-iframe> -->
-      <div>
+      <!-- <div>
         <amp-iframe width="360" height="200" src="https://www.youtube.com/embed/videoseries?list=PLliyT6QVi0cUFxQU_bsMcGenXH9UsMLZH" sandbox="allow-scripts allow-same-origin allow-presentation" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
           <amp-img placeholder height="59" width="99" src="./wi-mod/img/IMG_1731.PNG" style="opacity:0.8"></amp-img>
         </amp-iframe>
@@ -233,7 +241,7 @@
         <amp-iframe width="360" height="200" src="https://www.youtube.com/embed/videoseries?list=PLliyT6QVi0cUhfSYJHQ9QKupJOpaJ1ER5" sandbox="allow-scripts allow-same-origin allow-presentation" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
           <amp-img placeholder height="59" width="99" src="./wi-mod/img/IMG_1731.PNG" style="opacity:0.8"></amp-img>
         </amp-iframe>
-      </div>
+      </div> -->
     </div>
   </section>
 </amp-accordion>
@@ -242,8 +250,8 @@
 <!-- <video controlslist="nodownload noremote footbar" preload="none" x-webkit-airplay="deny" autoplay="true" playsinline="true" webkit-playsinline="true" raw-controls="true" x5-video-player-type="h5-page" poster="" style="width: 100%; height: 100%;" src="blob:https://vku.youku.com/c54710cc-8380-476a-a8e8-b86268e2ba59"></video> -->
 <!-- <video id="player-el_html5_api" preload="auto" playsinline="playsinline" webkit-playsinline="" class="vjs-tech" style="height: 340px;" tabindex="-1" role="application" autoplay="" src="blob:https://wx.vzan.com/a9121563-6766-438d-bdc9-b8cc22da24ba"><p class="vjs-no-js">不支持播放</p></video> -->
 <div id="ifr_cont">
-  <amp-iframe src="https://vii-mod.vercel.app/#ifr" width="610" height="599" scrolling="no" frameborder="0" sandbox="allow-scripts allow-same-origin">
-    <amp-img placeholder height="59" width="99" src="./wi-mod/img/IMG_1731.PNG" style="opacity:0.8"></amp-img>
+  <amp-iframe src="https://vii-mod.vercel.app/#ifr" width="699" height="999" scrolling="no" frameborder="0" sandbox="allow-scripts allow-same-origin">
+    <amp-img placeholder height="9" width="17" src="./wi-mod/img/IMG_1733.PNG" style="opacity:0.1"></amp-img>
   </amp-iframe>
 </div>
 <!-- <amp-install-serviceworker src="../sw.js"
