@@ -59,7 +59,7 @@
   }
   .inner{
     width: 50%;
-    min-width: 368px;
+    min-width: 352px;
   }
   amp-youtube{
     margin: 5px 9px;
@@ -77,11 +77,14 @@
     opacity: 0.8;
   }
   .inner amp-iframe{
-    margin: 9px;
+    margin: 9px 1px;
     display: block;
   }
   h6:hover, amp-list p:hover{
     color: var(--bg-hov);
+  }
+  #ifr_cont amp-iframe{
+    display: block;
   }
 </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -219,13 +222,13 @@
 <!-- <video controlslist="nodownload noremote footbar" preload="none" x-webkit-airplay="deny" autoplay="true" playsinline="true" webkit-playsinline="true" raw-controls="true" x5-video-player-type="h5-page" poster="" style="width: 100%; height: 100%;" src="blob:https://vku.youku.com/c54710cc-8380-476a-a8e8-b86268e2ba59"></video> -->
 <!-- <video id="player-el_html5_api" preload="auto" playsinline="playsinline" webkit-playsinline="" class="vjs-tech" style="height: 340px;" tabindex="-1" role="application" autoplay="" src="blob:https://wx.vzan.com/a9121563-6766-438d-bdc9-b8cc22da24ba"><p class="vjs-no-js">不支持播放</p></video> -->
 <br>
-<div id>
+<div id="ifr_cont">
   <amp-iframe src="https://vii-mod.vercel.app/#ifr" width="619" height="999" scrolling="no" frameborder="0" sandbox="allow-scripts allow-same-origin">
     <amp-img placeholder height="1" width="2" src="./wi-mod/img/IMG_1733.PNG" style="opacity:0.1"></amp-img>
   </amp-iframe>
-  <!-- <amp-iframe src="https://nuitmod.github.io/mod_pwa/amp" width="619" height="999" scrolling="no" frameborder="0" sandbox="allow-scripts allow-same-origin">
+  <amp-iframe src="https://nuitmod.github.io/mod_pwa/amp" width="619" height="999" scrolling="no" frameborder="0" sandbox="allow-scripts allow-same-origin">
     <amp-img placeholder height="1" width="2" src="./wi-mod/img/IMG_1733.PNG" style="opacity:0.1"></amp-img>
-  </amp-iframe> -->
+  </amp-iframe>
 </div>
 <!-- <amp-install-serviceworker src="../sw.js"
                            data-iframe-src="install-sw.html"
