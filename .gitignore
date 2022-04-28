@@ -1,4 +1,6 @@
-/Scripts/
-/Lib/
-/venv/
-/vy_venv/
+/vy_dat/Scripts/
+/vy_dat/Lib/
+/vy_dat/venv/
+/vy_dat/vy_venv/
+/node_modules/
+.vercel
