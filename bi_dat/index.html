@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+
 <!-- <script data-main="../api/bin.js" src="../modules/require.js"></script> -->
 <script src="bundle.js"></script>
 <title>bi dat</title>
@@ -23,6 +26,26 @@
         color: var(--bg-main);
         font-size: 11px;
     }
+    amp-accordion {
+        background: var(--bg-menu);
+        width: 99%;
+        margin-bottom: 5px;
+    }
+    amp-accordion a{
+        background: var(--bg-menu);
+        color: var(--bg-main);
+        font-size: 12px;
+        text-decoration: none;
+        padding: 7px 10px;
+    }
+    amp-accordion .amp_a{
+        background: var(--bg-menu);
+        width: auto;
+    }
+    amp-img{
+        height: 60px;
+        width: 200px;
+    }
     iframe{
         width: 220px;
         height: 110px;
@@ -34,13 +57,25 @@
     </style>
 </head>
 <body>
- <h6>bi dat</h6>
- <textarea name="bi" id="bi-1" cols="20" rows="5">
- </textarea>
-<div>
-<iframe src="//player.bilibili.com/player.html?aid=714832697&bvid=BV1HX4y1G7oM&cid=316290751&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-</div>
-<iframe height=498 width=510 src='https://player.youku.com/embed/XNDk4OTk2MjYzMg==' frameborder=0 'allowfullscreen'></iframe>
+    <amp-img src="../vv-mod/img/v_i_2.GIF"></amp-img>
+ <amp-accordion class="main" disable-session-states>
+    <section>
+      <h6 class="amp_a">vv</h6>
+      <div>
+        <h6>bi dat</h6>
+        <textarea name="bi" id="bi-1" cols="20" rows="5">
+        </textarea>
+        <div>
+            <iframe src="//player.bilibili.com/player.html?aid=714832697&bvid=BV1HX4y1G7oM&cid=316290751&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+        </div>
+        <div>
+        <iframe src="//player.bilibili.com/player.html?aid=217437943&bvid=BV1ia411G7bs&cid=814912729&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+        </div>
+        <br>
+        <iframe height=498 width=510 src='https://player.youku.com/embed/XNDk4OTk2MjYzMg==' frameborder=0 'allowfullscreen'></iframe>
+      </div>
+    </section>
+  </amp-accordion>
 <script src="../api/bin.js"></script>
 <!-- <script>
     define(function (require) {
