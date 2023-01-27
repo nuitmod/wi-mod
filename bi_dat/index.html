@@ -9,7 +9,7 @@
 <!-- <link rel="preload" as="script" href="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js"> -->
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-
+<script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
 <!-- <script data-main="../api/bin.js" src="../modules/require.js"></script> -->
 <script src="bundle.js"></script>
 <title>bi dat</title>
@@ -56,11 +56,19 @@
         color: ghostwhite;
         background: black; 
     }
+    audio{
+        height: 10px;
+        width: 250px;
+        color: black;
+        background: black;
+        background-color: black;
+        z-index: 12;
+    }
     </style>
 </head>
 <body>
-    <br>
-<amp-img src="../vv-mod/img/v_vv.jpg" height="60px" width="39px"></amp-img>
+<br>
+<amp-img src="../vv-mod/img/v_vv.jpg" height="60px" width="39px" style="opacity: 0.7;"></amp-img>
 <amp-img src="../vv-mod/img/v_i_2.GIF" height="60px" width="120px"></amp-img>
  <amp-accordion class="main" disable-session-states>
     <section>
@@ -79,6 +87,24 @@
       </div>
     </section>
   </amp-accordion>
+  <br>
+  <amp-accordion class="inner" disable-session-states>
+    <section>
+      <h6 class="amp_a">Radio</h6>
+      <div>
+        <p>dubstep beyond</p>
+        <amp-audio preload="none" controls>
+          <source src="https://ice3.somafm.com/dubstep-128-mp3" type="audio/mpeg">
+        </amp-audio>
+        <p>Пикник</p>
+        <amp-audio preload="none" controls>
+        <source src="https://pub0201.101.ru/stream/pro/aac/64/157?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpcCI6IjMxLjE2Mi40LjIyNCIsInVzZXJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC84Ny4wLjQyODAuODggU2FmYXJpXC81MzcuMzYiLCJ1aWRfY2hhbm5lbCI6IjE1NyIsInR5cGVfY2hhbm5lbCI6ImNoYW5uZWwiLCJleHAiOjE2MDczNDkwMDh9.rWMD4tWmvVsNiZDACGBPwQRIYaKiryQPmLG8bNxGLJ0" type="audio/mpeg">
+        </amp-audio>
+      </div>
+    </section>
+  <!-- <amp-iframe width="350" height="180" src="" sandbox="allow-scripts allow-same-origin allow-presentation" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    <amp-img placeholder height="1" width="2" src="../vv-mod/img/v_i_1.JPG" style="opacity:0.1"></amp-img>
+  </amp-iframe> -->
 <script src="../api/bin.js"></script>
 <!-- <script>
     define(function (require) {
