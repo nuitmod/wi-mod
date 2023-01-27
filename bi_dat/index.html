@@ -11,6 +11,7 @@
 <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
 <script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
 <!-- <script data-main="../api/bin.js" src="../modules/require.js"></script> -->
+<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 <script src="bundle.js"></script>
 <title>bi dat</title>
 <style>
@@ -64,6 +65,10 @@
         background-color: black;
         z-index: 12;
     }
+    /* .inner{
+        width: 50%;
+        min-width: 352px;
+    } */
     </style>
 </head>
 <body>
@@ -102,9 +107,9 @@
         </amp-audio>
       </div>
     </section>
-  <!-- <amp-iframe width="350" height="180" src="" sandbox="allow-scripts allow-same-origin allow-presentation" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  <amp-iframe width="350" height="180" src="https://v-mod.vercel.app/" sandbox="allow-scripts allow-same-origin allow-presentation" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     <amp-img placeholder height="1" width="2" src="../vv-mod/img/v_i_1.JPG" style="opacity:0.1"></amp-img>
-  </amp-iframe> -->
+  </amp-iframe>
 <script src="../api/bin.js"></script>
 <!-- <script>
     define(function (require) {
