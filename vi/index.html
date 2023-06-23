@@ -22,6 +22,7 @@
     <script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
     <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
     <style amp-custom>
   :root{
     --bg-main: #684f67;
@@ -101,6 +102,15 @@
   }
   p{
     font-size: 8px;
+  }
+  video{
+    height: 10px;
+    width: 250px;
+    color: black;
+    background: black;
+    background-color: black;
+    z-index: 12;
+    margin-top: 8px;
   }
 </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -305,12 +315,15 @@
             </amp-audio>
             <p>Witch house radio</p>
             <amp-audio preload="none" controls>
-            <source src="https://79.120.77.11:8002/witchhouse" type="audio/mpeg">
+            <source src="https://79.120.77.11:8002/witchhouse" type="audio/aac">
             </amp-audio>
             <p>Witch house 2</p>
             <amp-audio preload="none" controls>
             <source src="https://pub0102.101.ru:8443/stream/personal/aacp/64/791358?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiI4YzhiZDZhMmZlMjZlZTE2YWIxNzA4MzQ0M2NhMWI3ZCIsIklQIjoiOTQuNTAuMTg3LjI1NCIsIlVBIjoiTW96aWxsYS81LjAgKE1hY2ludG9zaDsgSW50ZWwgTWFjIE9TIFggMTBfMTVfNykgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzExNC4wLjAuMCBTYWZhcmkvNTM3LjM2IiwiUmVmIjoiaHR0cHM6Ly8xMDEucnUvIiwidWlkX2NoYW5uZWwiOiI3OTEzNTgiLCJ0eXBlX2NoYW5uZWwiOiJwZXJzb25hbCIsInR5cGVEZXZpY2UiOiJQQyIsIkJyb3dzZXIiOiJDaHJvbWUiLCJCcm93c2VyVmVyc2lvbiI6IjExNC4wLjAuMCIsIlN5c3RlbSI6Ik1hYyBPUyBYIFB1bWEiLCJleHAiOjE2ODc1NTE5MDh9.NZzSnsg_dWUTwv6qs9Bj5TpKvlo5t1SF8N38eRoJV40" type="audio/mpeg">
             </amp-audio>
+            <br>
+            <video controls="" autoplay="" name="media"><source src="http://79.120.77.11:8002/witchhouse" type="audio/aac"></video>
+            <amp-video width="220" height="100"><source src="http://79.120.77.11:8002/witchhouse" type="audio/aac"></amp-video>
            </div>
         </section>
       </amp-accordion>   
@@ -318,6 +331,7 @@
     </div>
   </section>
 </amp-accordion>
+
 <!-- <amp-install-serviceworker src="../sw.js"
                            data-iframe-src="install-sw.html"
                            layout="nodisplay">
